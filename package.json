@@ -1,0 +1,25 @@
+{
+  "name": "miblog",
+  "version": "1.0.0",
+  "description": "Just stuff I like to talk about",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdgalapin/MiBlog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdgalapin/MiBlog/issues"
+  },
+  "homepage": "https://github.com/vdgalapin/MiBlog#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "jquery": "^3.6.1"
+  }
+}
