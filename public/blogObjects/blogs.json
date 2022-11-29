@@ -1,0 +1,20 @@
+{
+    "articles":[
+        {
+            "articleName":"Saucony Endorphin Speed 2",
+            "articlePath":"Article1.html",
+            "articleCategory": "Running",
+            "articleDescription": "Best half marathon shoe in my opinon. It does not have everything, but it has every essential I needed.",
+            "articleDateCreated": "November 28, 2022",
+            "articleImage":"running.jpg"
+        },
+        {
+            "articleName":"Christmas Movie",
+            "articlePath":"Article2.html",
+            "articleCategory": "Movie",
+            "articleDescription": "Top christmas movies in my opinion. Based on my experience as an audience.",
+            "artic;eDateCreated": "December 1, 2022",
+            "articleImage":"christmas.jpg"
+        }
+    ]
+}

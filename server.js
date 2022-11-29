@@ -20,7 +20,12 @@ app.listen(8080);
 // Posting the index home page
 app.get('/', function(req, res) {
 
+    var fs = require('fs');
+    var files = fs.readdirSync('public/snippets/blog/');
+
     // rendering the index page
-    res.render('pages/index')
+    res.render('pages/index', {
+        filenames: files
+    })
 
 });
