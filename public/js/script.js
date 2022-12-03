@@ -51,20 +51,21 @@
 
     function addHomePageList() {
 
-        // var list = document.getElementById("articles_list").getElementsByTagName("li");
+        var list = document.getElementById("articles_list").getElementsByTagName("li");
 
-        // for(let x = 0; x < list.length; x++) {
-        //     var article = addList(list[x].innerHTML);
-        //     // document.getElementById("article_main_body").append(article);
-        //     addHTML("#article_main_body", article)
-        // }
+        var articles_in_files = [];
+        for(let x = 0; x < list.length; x++) {
+           articles_in_files.push(list[x].innerHTML.trim());
+        }
 
 
         fetch('blogObjects/blogs.json')
             .then((response) => response.json())
             .then((json) => {
                 for(let x = 0; x < json.articles.length; x++) {
-                    addHTML("#article_main_body", addList(json.articles[x]));
+                    if(articles_in_files.includes(json.articles[x].articlePath)) {
+                        addHTML("#article_main_body", addList(json.articles[x]));
+                    }
                 }
                 // var data = JSON.parse(json);
                 // console.log(data);
